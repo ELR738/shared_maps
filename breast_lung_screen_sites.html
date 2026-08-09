@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5d2f20e25e5508c4a963b90bc388468e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5d2f20e25e5508c4a963b90bc388468e" ></div>
+        
+    
+            
+            <style>
+                #export {
+                    position: absolute;
+                    top: 5px;
+                    right: 10px;
+                    z-index: 999;
+                    background: white;
+                    color: black;
+                    padding: 6px;
+                    border-radius: 4px;
+                    font-family: 'Helvetica Neue';
+                    cursor: pointer;
+                    font-size: 12px;
+                    text-decoration: none;
+                    top: 90px;
+                }
+            </style>
+            <a href='#' id='export'>Export</a>
+            
+        
+</body>
+<script>
+    
+    
+            var map_5d2f20e25e5508c4a963b90bc388468e = L.map(
+                "map_5d2f20e25e5508c4a963b90bc388468e",
+                {
+                    center: [54.0588, -1.0723],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_00fe659a83dea08881c723b52d46cdbe = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_00fe659a83dea08881c723b52d46cdbe.addTo(map_5d2f20e25e5508c4a963b90bc388468e);
+        
+    
+            var feature_group_2df27b70b95be830d3d2fdd00da7a5b7 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_5f4697b0b1cd18fb6d3559607874a837 = L.circleMarker(
+                [54.088083, -1.397442],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_5f4697b0b1cd18fb6d3559607874a837.bindTooltip(
+                `<div>
+                     Site Name: Morrisons Supermarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_819b1872877266176ce4fe99d8609137 = L.circleMarker(
+                [54.374957, -1.731334],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_819b1872877266176ce4fe99d8609137.bindTooltip(
+                `<div>
+                     Site Name: Catterick Leisure Centre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7a389459266608935278f5a0ba346adc = L.circleMarker(
+                [54.120585, -1.189632],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_7a389459266608935278f5a0ba346adc.bindTooltip(
+                `<div>
+                     Site Name: Easingwold Health Centre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_73036b312bd9c6c7b0557e236315d09e = L.circleMarker(
+                [54.210597, -0.292716],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_73036b312bd9c6c7b0557e236315d09e.bindTooltip(
+                `<div>
+                     Site Name: Tesco Supermarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_47c7882ad9d4f6a7e526d85c7d41da27 = L.circleMarker(
+                [54.003169, -1.550135],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_47c7882ad9d4f6a7e526d85c7d41da27.bindTooltip(
+                `<div>
+                     Site Name: Harrogate Wellness and Leisure Centre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_78f7469e8758aaa56d3e43b6b7dc52f2 = L.circleMarker(
+                [54.303299, -2.190307],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_78f7469e8758aaa56d3e43b6b7dc52f2.bindTooltip(
+                `<div>
+                     Site Name: Dales Countryside Museum
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2bfebc15934a979f62652c6ad4f47478 = L.circleMarker(
+                [54.249254, -1.056429],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_2bfebc15934a979f62652c6ad4f47478.bindTooltip(
+                `<div>
+                     Site Name: The Medical Centre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6b421fc8fc62daf93f6090bac9422eb5 = L.circleMarker(
+                [54.268893, -0.936596],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_6b421fc8fc62daf93f6090bac9422eb5.bindTooltip(
+                `<div>
+                     Site Name: Moorside Bar & Club
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b6bc7df3533ccc992b1b375237183bc9 = L.circleMarker(
+                [54.004025, -1.448973],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_b6bc7df3533ccc992b1b375237183bc9.bindTooltip(
+                `<div>
+                     Site Name: Knaresborough Technology Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f80ced01ae9f48ebd46180ff173c57b2 = L.circleMarker(
+                [54.30675, -1.815382],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_f80ced01ae9f48ebd46180ff173c57b2.bindTooltip(
+                `<div>
+                     Site Name: Tennants Auctioneers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_122e95dfea23c3e761acee25de19e77b = L.circleMarker(
+                [54.139986, -0.805623],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_122e95dfea23c3e761acee25de19e77b.bindTooltip(
+                `<div>
+                     Site Name: Malton Community Sports Centre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c98ece573d1b94146b752fd280386f9f = L.circleMarker(
+                [54.342343, -1.430544],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_c98ece573d1b94146b752fd280386f9f.bindTooltip(
+                `<div>
+                     Site Name: Friarage Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fb0002cf08dc2c1f710c8da51f42c71e = L.circleMarker(
+                [54.087063, -1.762469],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_fb0002cf08dc2c1f710c8da51f42c71e.bindTooltip(
+                `<div>
+                     Site Name: The Ambulance Station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_85277d9b2af4e9bc04266490d8a7bfcb = L.circleMarker(
+                [54.244956, -0.781447],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_85277d9b2af4e9bc04266490d8a7bfcb.bindTooltip(
+                `<div>
+                     Site Name: Pickering Surgery
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a77716972393061a37bca909e0383034 = L.circleMarker(
+                [54.122082, -1.526114],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_a77716972393061a37bca909e0383034.bindTooltip(
+                `<div>
+                     Site Name: Morrisons Supermarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c6f6dd2dc82d40760394bf293548602e = L.circleMarker(
+                [53.777504, -1.07834],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_c6f6dd2dc82d40760394bf293548602e.bindTooltip(
+                `<div>
+                     Site Name: Selby War Memorial Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7968eb249f4c062c17db2aeefa44afcf = L.circleMarker(
+                [53.885512, -1.258245],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_7968eb249f4c062c17db2aeefa44afcf.bindTooltip(
+                `<div>
+                     Site Name: Tadcaster Health Centre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d8f0cb2c103395840e5722f2bd5b2d2 = L.circleMarker(
+                [54.224235, -1.326352],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_3d8f0cb2c103395840e5722f2bd5b2d2.bindTooltip(
+                `<div>
+                     Site Name: Thirsk Farmers Auction Mart Thirsk Rural Business Centre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_847a5acf7d49d07596f8c24aa8b12eca = L.circleMarker(
+                [54.490379, -0.624457],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_847a5acf7d49d07596f8c24aa8b12eca.bindTooltip(
+                `<div>
+                     Site Name: Whitby Leisure Centre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5f9a4011a65c1ad7ab7d10987d3ef5b4 = L.circleMarker(
+                [53.96897, -1.084294],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_5f9a4011a65c1ad7ab7d10987d3ef5b4.bindTooltip(
+                `<div>
+                     Site Name: The Breast Imaging Unit Magnolia Centre York Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6fb4cd87888d4acf92ac387ae2b58555 = L.circleMarker(
+                [54.281725, -0.43477],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_6fb4cd87888d4acf92ac387ae2b58555.bindTooltip(
+                `<div>
+                     Site Name: The Mammography Suite
+Main X-Ray Department
+Scarborough Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3dba796b161af9a01dd42b0fccfe6b84 = L.circleMarker(
+                [53.744134, -0.358153],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_3dba796b161af9a01dd42b0fccfe6b84.bindTooltip(
+                `<div>
+                     Site Name: Hull and East Yorkshire Women & Children’s Hospital (Hull Royal Infirmary)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3bcdb86808d51ca6df7ba12e96f877cc = L.circleMarker(
+                [53.763026, -0.29922],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_3bcdb86808d51ca6df7ba12e96f877cc.bindTooltip(
+                `<div>
+                     Site Name: Woodford Leisure Centre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d0e55e1f4cdaeaa02420a62a875455fb = L.circleMarker(
+                [53.795457, -0.348012],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_d0e55e1f4cdaeaa02420a62a875455fb.bindTooltip(
+                `<div>
+                     Site Name: ASDA Superstore Kingswood
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3c5892be40a0fbd4fb82dfdd9d438b44 = L.circleMarker(
+                [53.776754, -0.44499],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_3c5892be40a0fbd4fb82dfdd9d438b44.bindTooltip(
+                `<div>
+                     Site Name: Castle Hill Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9d406d2dcb079c8cb6addb53f2cfc73 = L.circleMarker(
+                [53.728557, 0.03401],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_c9d406d2dcb079c8cb6addb53f2cfc73.bindTooltip(
+                `<div>
+                     Site Name: Withernsea Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cfbe4dc89ff5f8addebbe33b96a4475f = L.circleMarker(
+                [53.738903, -0.196164],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_cfbe4dc89ff5f8addebbe33b96a4475f.bindTooltip(
+                `<div>
+                     Site Name: Hedon (formally Co-Op, now Netto)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c1ff505fa7ba76e4844f454e1cb83a0 = L.circleMarker(
+                [53.911829, -0.161788],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_1c1ff505fa7ba76e4844f454e1cb83a0.bindTooltip(
+                `<div>
+                     Site Name: Hornsea Leisure Centre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1197edd70ed0dd10fc8045c9d8ae35dd = L.circleMarker(
+                [54.086552, -0.215754],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_1197edd70ed0dd10fc8045c9d8ae35dd.bindTooltip(
+                `<div>
+                     Site Name: Bridlington Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_937cd3216b17f0a6d5822a46e3a3bd5f = L.circleMarker(
+                [53.836463, -0.770808],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_937cd3216b17f0a6d5822a46e3a3bd5f.bindTooltip(
+                `<div>
+                     Site Name: Holme on Spalding Moore Village Hall
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9ead54fca9ee78395b52d0378052ded6 = L.circleMarker(
+                [53.874123, -0.701532],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_9ead54fca9ee78395b52d0378052ded6.bindTooltip(
+                `<div>
+                     Site Name: Langlands Garden Centre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9a4eca55db4c0bcba59beca779b93c9c = L.circleMarker(
+                [54.00415, -0.439995],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_9a4eca55db4c0bcba59beca779b93c9c.bindTooltip(
+                `<div>
+                     Site Name: Tesco Superstore
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d64e27933d82d4def6cddf761048f780 = L.circleMarker(
+                [53.715483, -0.874936],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_2df27b70b95be830d3d2fdd00da7a5b7);
+        
+    
+            circle_marker_d64e27933d82d4def6cddf761048f780.bindTooltip(
+                `<div>
+                     Site Name: Goole Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_2df27b70b95be830d3d2fdd00da7a5b7.addTo(map_5d2f20e25e5508c4a963b90bc388468e);
+        
+    
+            var feature_group_d1a9adc289cd254de78b4c65a3559d27 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_cdb8bf38c53f579a1806989af5cb23da = L.circleMarker(
+                [53.764302, -0.292842],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_d1a9adc289cd254de78b4c65a3559d27);
+        
+    
+            circle_marker_cdb8bf38c53f579a1806989af5cb23da.bindTooltip(
+                `<div>
+                     Site Name: Morrisons Holderness Road 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c085468df16cb211355dd6177d0fecff = L.circleMarker(
+                [54.086552, -0.215754],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_d1a9adc289cd254de78b4c65a3559d27);
+        
+    
+            circle_marker_c085468df16cb211355dd6177d0fecff.bindTooltip(
+                `<div>
+                     Site Name: Bridlington Hospital 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ddb8301471a9c89c4a7a325c61fe7ba4 = L.circleMarker(
+                [53.569882, -0.078785],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_d1a9adc289cd254de78b4c65a3559d27);
+        
+    
+            circle_marker_ddb8301471a9c89c4a7a325c61fe7ba4.bindTooltip(
+                `<div>
+                     Site Name: Grimsby Tesco
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a570b3066ab88126f7cbc52a4514694 = L.circleMarker(
+                [53.58255, -0.65542],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(feature_group_d1a9adc289cd254de78b4c65a3559d27);
+        
+    
+            circle_marker_2a570b3066ab88126f7cbc52a4514694.bindTooltip(
+                `<div>
+                     Site Name: Scunthorpe Brumby Hall
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_d1a9adc289cd254de78b4c65a3559d27.addTo(map_5d2f20e25e5508c4a963b90bc388468e);
+        
+    
+            var layer_control_16a338acd3b7f5dae795dad2576eceb5_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_00fe659a83dea08881c723b52d46cdbe,
+                },
+                overlays :  {
+                    "Breast Screening Sites" : feature_group_2df27b70b95be830d3d2fdd00da7a5b7,
+                    "Lung Screening Sites" : feature_group_d1a9adc289cd254de78b4c65a3559d27,
+                },
+            };
+            let layer_control_16a338acd3b7f5dae795dad2576eceb5 = L.control.layers(
+                layer_control_16a338acd3b7f5dae795dad2576eceb5_layers.base_layers,
+                layer_control_16a338acd3b7f5dae795dad2576eceb5_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_5d2f20e25e5508c4a963b90bc388468e);
+
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topright",
+  "title": "Expand me",
+  "titleCancel": "Exit me",
+  "forceSeparateButton": true,
+}
+            ).addTo(map_5d2f20e25e5508c4a963b90bc388468e);
+        
+    
+
+            var geocoderOpts_geocoder_7527454d24933544803cbe76935de1c6 = {
+  "collapsed": false,
+  "position": "topright",
+  "defaultMarkGeocode": true,
+  "zoom": 11,
+  "provider": "nominatim",
+  "providerOptions": {
+},
+};
+
+            // note: geocoder name should start with lowercase
+            var geocoderName_geocoder_7527454d24933544803cbe76935de1c6 = geocoderOpts_geocoder_7527454d24933544803cbe76935de1c6["provider"];
+
+            var customGeocoder_geocoder_7527454d24933544803cbe76935de1c6 = L.Control.Geocoder[ geocoderName_geocoder_7527454d24933544803cbe76935de1c6 ](
+                geocoderOpts_geocoder_7527454d24933544803cbe76935de1c6['providerOptions']
+            );
+            geocoderOpts_geocoder_7527454d24933544803cbe76935de1c6["geocoder"] = customGeocoder_geocoder_7527454d24933544803cbe76935de1c6;
+
+            L.Control.geocoder(
+                geocoderOpts_geocoder_7527454d24933544803cbe76935de1c6
+            ).on('markgeocode', function(e) {
+                var zoom = geocoderOpts_geocoder_7527454d24933544803cbe76935de1c6['zoom'] || map_5d2f20e25e5508c4a963b90bc388468e.getZoom();
+                map_5d2f20e25e5508c4a963b90bc388468e.setView(e.geocode.center, zoom);
+            }).addTo(map_5d2f20e25e5508c4a963b90bc388468e);
+
+        
+    
+            var layer_control_e2a6f0c23c6cbb8e125d11f50d89cba4_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_00fe659a83dea08881c723b52d46cdbe,
+                },
+                overlays :  {
+                    "Breast Screening Sites" : feature_group_2df27b70b95be830d3d2fdd00da7a5b7,
+                    "Lung Screening Sites" : feature_group_d1a9adc289cd254de78b4c65a3559d27,
+                },
+            };
+            let layer_control_e2a6f0c23c6cbb8e125d11f50d89cba4 = L.control.layers(
+                layer_control_e2a6f0c23c6cbb8e125d11f50d89cba4_layers.base_layers,
+                layer_control_e2a6f0c23c6cbb8e125d11f50d89cba4_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_5d2f20e25e5508c4a963b90bc388468e);
+
+        
+    
+            var options = {
+              position: "topleft",
+              draw: {},
+              edit: {},
+            }
+                // FeatureGroup is to store editable layers.
+                var drawnItems_draw_control_e855a3b2369b0a8d6e1a728d8d2367c9 =
+                    new L.featureGroup().addTo(
+                        map_5d2f20e25e5508c4a963b90bc388468e
+                    );
+
+            options.edit.featureGroup = drawnItems_draw_control_e855a3b2369b0a8d6e1a728d8d2367c9;
+            var draw_control_e855a3b2369b0a8d6e1a728d8d2367c9 = new L.Control.Draw(
+                options
+            ).addTo( map_5d2f20e25e5508c4a963b90bc388468e );
+            map_5d2f20e25e5508c4a963b90bc388468e.on(L.Draw.Event.CREATED, function(e) {
+                var layer = e.layer,
+                    type = e.layerType;
+                var coords = JSON.stringify(layer.toGeoJSON());
+                layer.on('click', function() {
+                    alert(coords);
+                    console.log(coords);
+                });
+                drawnItems_draw_control_e855a3b2369b0a8d6e1a728d8d2367c9.addLayer(layer);
+            });
+            map_5d2f20e25e5508c4a963b90bc388468e.on('draw:created', function(e) {
+                drawnItems_draw_control_e855a3b2369b0a8d6e1a728d8d2367c9.addLayer(e.layer);
+            });
+
+            
+            document.getElementById('export').onclick = function(e) {
+                var data = drawnItems_draw_control_e855a3b2369b0a8d6e1a728d8d2367c9.toGeoJSON();
+                var convertedData = 'text/json;charset=utf-8,'
+                    + encodeURIComponent(JSON.stringify(data));
+                document.getElementById('export').setAttribute(
+                    'href', 'data:' + convertedData
+                );
+                document.getElementById('export').setAttribute(
+                    'download', "data.geojson"
+                );
+            }
+            
+        
+    
+
+        var legend = L.control({position: 'bottomleft'});
+
+        legend.onAdd = function(map) {
+
+            var div = L.DomUtil.create('div', 'info legend');
+
+            div.innerHTML = `
+                <div style="
+                    background:rgba(255,255,255,0.75);
+                    padding:4px;
+                    border:1px solid grey;
+                    border-radius:4px;
+                    font-size:10px;
+                    margin-left:40px;
+                ">
+                    <b>Breast Screening<br>Site Type</b>
+                    <span style="color:green;">●</span> Static<br>
+                    <span style="color:red;">●</span> Mobile
+                </div>
+            `;
+
+            return div;
+        };
+
+        legend.addTo(map_5d2f20e25e5508c4a963b90bc388468e);
+
+        
+</script>
+</html>
